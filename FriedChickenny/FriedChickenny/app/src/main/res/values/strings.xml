@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Fried Chickenny</string>
+
+    <!--    Main Nav   -->
+    <string name="homeNav">Home</string>
+    <string name="menuNav">Menu</string>
+    <string name="cartNav">Cart</string>
+    <string name="profileNav">Profile</string>
+
+    <!--    Header   -->
+    <string name="menuHeader">Menu</string>
+    <string name="cartHeader">My Cart</string>
+    <string name="checkOutHeader">Checkout</string>
+    <string name="receiptHeader">Order Confirmation</string>
+    <string name="profileHeader">My Profile</string>
+
+    <!--    Section   -->
+    <string name="recommendTitle">Recommendations</string>
+    <string name="chickenTitle">Chicken</string>
+    <string name="riceboxTitle">Rice Box</string>
+    <string name="drinkTitle">Drink</string>
+    <string name="flavourTitle">Flavour</string>
+    <string name="iceTitle">Ice Level</string>
+
+    <!--   Details Page   -->
+    <string name="errorMsgSelect">Please select!</string>
+
+    <!--    Cart Page    -->
+    <string name="totalTitle">Total</string>
+    <string name="subtotalLabel">Subtotal</string>
+    <string name="taxLabel">Service Charge (6%)</string>
+    <string name="deliveryFessLabel">Delivery Fees</string>
+    <string name="totalLabel">(incl. SST)</string>
+    <string name="checkOutBtnLabel">Review Payment and Address</string>
+    <string name="addMoreCart">Add more items</string>
+    <string name="emptyCartMssg">Feed Your Cart!</string>
+
+    <!--    Checkout Page   -->
+    <string name="placeOrderBtnLabel">Place Order</string>
+    <string name="addressTitle">Delivery Address</string>
+    <string name="remarkTitle">Remark</string>
+    <string name="remarkHint">Leave note to restaurant (Optional)</string>
+    <string name="payMethodTitle">Payment Method</string>
+    <string name="creditDebitRadio">Credit / Debit Card</string>
+    <string name="onlineBankRadio">Online Banking</string>
+    <string name="TNGRadio">Touch \'n Go eWallet</string>
+    <string name="orderSumTitle">Order Summary</string>
+    <string name="cutleryLabel">Cutlery</string>
+
+    <!--    Receipt Page   -->
+    <string name="orderSlider">Order collected</string>
+    <string name="etaLabel">Estimated Delivery Time</string>
+    <string name="orderDet">Order Details</string>
+    <string name="foodDetails">Food</string>
+
+    <!--    Feedback   -->
+    <string name="rateTitle">Rate Our Service</string>
+    <string name="feedbackTitle">Feedback</string>
+    <string name="feedbackHint">You may provide any feedback (optional)</string>
+    <string name="submit">Submit</string>
+    <string name="errorMsgRate">Please rate!</string>
+
+    <!--    Profile Page   -->
+    <string name="nameLabel">Name</string>
+    <string name="mobileLabel">Contact Number</string>
+    <string name="emailLabel">Email</string>
+    <string name="addressLabel">Delivery Address</string>
+    <string name="save">Save</string>
+    <string name="emptyName">Name cannot be empty</string>
+    <string name="invalidName">Name must contain only letters</string>
+    <string name="emptyMobile">Contact number cannot be empty</string>
+    <string name="invalidMobile">Invalid contact number</string>
+    <string name="emptyEmail">Email cannot be empty</string>
+    <string name="invalidEmail">Invalid email address</string>
+    <string name="emptyAddress">Delivery address cannot be empty</string>
+    <string name="orderHistory">Order History</string>
+
+</resources>
