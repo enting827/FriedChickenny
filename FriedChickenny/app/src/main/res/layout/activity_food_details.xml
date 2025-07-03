@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodDetails">
+
+    <ScrollView
+        android:id="@+id/foodDetScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Food Image -->
+                <ImageView
+                    android:id="@+id/foodImgDet"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <!-- Back Button -->
+                <ImageButton
+                    android:id="@+id/backBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/rounded_light_shape"
+                    android:contentDescription="Back Button"
+                    android:padding="8dp"
+                    android:src="@drawable/iconback" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/contentLay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <!-- Food Name -->
+                    <TextView
+                        android:id="@+id/itemName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:layout_weight="0.8"/>
+
+
+                    <!-- Food Price -->
+                    <TextView
+                        android:id="@+id/itemPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="TextView"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <!-- Food Description -->
+                <TextView
+                    android:id="@+id/itemDescr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:id="@+id/dividerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="?android:attr/listDivider" />
+
+                <!-- Selection Title-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/selectTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/errorMsgIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/errorMsgSelect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <!-- Selection -->
+                <RadioGroup
+                    android:id="@+id/selectionRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/addToCartLay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/lightorange">
+
+        <!-- Subtract Button -->
+        <ImageButton
+            android:id="@+id/subtractBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/subBtnStyle"
+            android:padding="6dp" />
+
+        <!-- Quantity -->
+        <TextView
+            android:id="@+id/quantityTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="1"
+            android:textSize="20dp" />
+
+        <!-- Add Button -->
+        <ImageButton
+            android:id="@+id/addBtn"
+            style="@style/addBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"/>
+
+        <!-- Add to Cart Button -->
+        <Button
+            android:id="@+id/addToCartBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange"
+            android:text="Add to Cart"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
